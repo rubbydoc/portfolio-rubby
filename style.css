@@ -136,6 +136,7 @@ img.framed {
   .passion{
     margin-top: 200px;
     color: #ccd6f6;
+    float: right;
 
   }
 
@@ -150,7 +151,7 @@ img.framed {
 
   }
 
-  #p1:hover, #p2:hover, #p3:hover{
+  .passions button:hover{
     background-color: #112240;
     color: #64ffda;
     outline: 0px;
@@ -163,14 +164,14 @@ img.framed {
     display: flex;
     width: 100%;
     position: relative;
-    height: 42px;
-    padding: 0px 20px 2px;
+    height: 59px;
+    padding: 0px 40px 5px;
     border-left: 2px solid #233554;
     background-color: transparent;
     font-family: monospace;
-    font-size: 13px;
+    font-size: 15px;
     text-align: left;
-    color: #8892b0;;
+    color: #8892b0;
 
   }
 .passions button{
@@ -191,7 +192,12 @@ img.framed {
 }
 
 .tabcontent p{
-  font-size: 18px;
+  font-size: 20px;
+  width: 570px;
+   color: #8892b0;
+   line-height: 23px;
+   padding: 20px 0 0 0px;
+   text-align: justify;
 }
 
 .tabcontent h3{
