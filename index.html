@@ -20,20 +20,85 @@
                 <p>Learning is not a destination. It is a continuous process. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt mattis commodo. Etiam vel </p>
             </div>
             <div class="about">
-                <h2>About Me</h2>
-               <div class="inner">
-                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-
-                <img class="framed" src="https://picsum.photos/seed/picsum/400/400" alt="random image">
-               </div>
+                <h2> < about > < / me ></h2>
+              <div class="aboutMe">
+                <div class="inner">
+                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+    
+                   
+                   </div>
+                   <div class="image">
+                    <img class="framed" src="../PORTFOLIO/izme.jpg" alt="random image">
+                    
+                </div>
+              </div>
             </div>
+
+            <div class="passion">
+                <h2>div.passion</h2>
+             <div class="p_section">
+                <div class="passions">
+                    <button class="tablinks"  onclick="openTab(event, 'passion1')" id="defaultOpen">Passion 1</button>
+                    <button class="tablinks"  onclick="openTab(event, 'passion2')">Passion 2</button>
+                    <button class="tablinks"  onclick="openTab(event, 'passion3')">Passion 3</button>
+
+
+                </div>
+
+            <div class="passionContent">
+                
+                <div id="passion1" class="tabcontent">
+                    <h3>London</h3>
+                    <p>London is the capital city of England.</p>
+                </div>
+                
+                <div id="passion2" class="tabcontent">
+                    <h3>Paris</h3>
+                    <p>Paris is the capital of France.</p> 
+                </div>
+                
+                <div id="passion3" class="tabcontent">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+            </div>
+             </div>
+
+        </div>
+
         </article>
         <aside class="aside aside-1"></aside>
         <aside class="aside aside-2"></aside>
         <footer class="footer"></footer>
-      </div>
+      </div>  
     
+
+
+
+      <script>
+        function openTab(evt, passionName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+
+
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace("active","");
+          }
+
+          document.getElementById(passionName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        document.getElementById("defaultOpen").click();
+        </script>
+           
+
+
 </body>
 </html>
