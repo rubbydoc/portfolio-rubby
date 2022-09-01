@@ -43,7 +43,23 @@ height: 100px;
 
 .aside-2 {
     background-color:#020c1b;
+position: fixed;
+right: 0;
+bottom: 0;
+}
 
+.email a{
+  margin: 20px auto;
+    padding: 10px;
+    font-family:monospace;
+    font-size:12px;
+    line-height: 18px;
+    letter-spacing: 5px;
+    writing-mode: vertical-rl;
+    display: inline-block;
+    text-decoration: none;
+    color: #a8b2d1;
+    position: relative;
 }
 
 
