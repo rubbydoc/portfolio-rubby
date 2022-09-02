@@ -42,14 +42,14 @@ height: 100px;
 }
 
 .aside-2 {
-    background-color:#020c1b;
+    /* background-color:#020c1b; */
 position: fixed;
 right: 0;
 bottom: 0;
 }
 
 .email a{
-  margin: 20px auto;
+  margin: 50px 20px;
     padding: 10px;
     font-family:monospace;
     font-size:12px;
@@ -60,6 +60,15 @@ bottom: 0;
     text-decoration: none;
     color: #a8b2d1;
     position: relative;
+}
+
+.social{
+  margin: 50px 0px;
+
+}
+
+.social ul li {
+  padding-top: 20px;
 }
 
 
@@ -132,8 +141,8 @@ img.framed {
 
   .aboutMe{
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 40px;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
   }
 
   .image img{
@@ -143,16 +152,13 @@ img.framed {
     margin-top: 30px;
   }
 
-  /* .image img{
 
-    display: block;
-    border-radius: 50px;
-  } */
 
   .passion{
     margin-top: 200px;
     color: #ccd6f6;
     float: right;
+    margin-right: 119px;
 
   }
 
@@ -218,4 +224,25 @@ img.framed {
 
 .tabcontent h3{
   font-size: 22px;
+}
+
+.social{
+  width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: #a8b2d1; 
+   
+}
+
+.social ul li a{
+  color: #a8b2d1;
+}
+
+
+svg{
+  vertical-align: middle;
+  cursor: pointer;
 }
