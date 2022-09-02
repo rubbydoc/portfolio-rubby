@@ -27,8 +27,14 @@ height: 100px;
 
 
 .footer {
-  background: lightgreen;
+  background-color:#020c1b;
+  height: 60px;
+  color: #a8b2d1;
+  font-family: monospace;
+  font-size: 12px;
+  
 }
+
 
 .main {
   text-align: left;
