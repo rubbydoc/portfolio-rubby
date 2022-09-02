@@ -300,7 +300,27 @@ img.framed {
 }
 
 
-svg{
-  vertical-align: middle;
-  cursor: pointer;
+.navlink a::before{
+  content: '';
+  position: absolute;
+  height: 1px;
+  bottom: 40px;
+  border-radius: 10px;
+  background-color: #64ffda;
+  transform-origin: right; /*from left it will go directly to right*/
+  transform: scaleX(0); /*makes the element disapper by making the size to zero*/
+  transition: transform .3s ease-in-out;
+}
+
+.navlink #a::before{
+  width: 40px;
+}
+
+.navlink #p::before{
+  width: 60px;
+}
+
+.navlink a:hover::before{
+  transform-origin: left;
+  transform: scaleX(1);
 }
