@@ -15,4 +15,15 @@ function openTab(evt, passionName) {
     evt.currentTarget.className += " active";
   }
   
+
+  
   document.getElementById("defaultOpen").click();
+
+  function openLink(evt,navName){
+    var navLink = document.getElementsByClassName("navLink");
+    for (i = 0; i < navLink.length; i++) {
+      navLink[i].className = navLink[i].className.replace("active","");
+    }
+
+    evt.currentTarget.className += " active"
+  }

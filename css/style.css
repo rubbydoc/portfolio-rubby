@@ -253,7 +253,12 @@ img.framed {
 }
 
 .passions button.active{
-  color: #64ffda;;
+  color: #64ffda;
+}
+
+.navlink ul li a.active{
+  color:  #64ffda;
+
 }
 
 .p_section{
