@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/d509d646fc.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Portfolio - Rubby Jane Doclara</title>
 </head>
 <body>
@@ -44,8 +46,10 @@
                    
                    </div>
                    <div class="image">
+                    <p id="info">I am an introverted person. I don't speak always but I'm good at listening. One of my strengths is being a fast learner. Since I'm not good at memorizing, I have  made an effort to become a critical thinker and be good at analyzation.
+                      I have dreamed to become an Accountant before </p>
                     <img class="framed" src="https://cdn.designsmaz.com/wp-content/uploads/2016/03/Cat-with-Sunglasses-Background.jpg" alt="random image">
-                    
+                   
                 </div>
               </div>
             </div>
@@ -126,6 +130,13 @@
            
 
      <script src="js/tab.js"></script>
+     <script>
+      $(document).ready(function(){
+        $(".framed").hover(function(){
+          $("#info").fadeIn("slow");
+        });
+      });
+     </script>
 
 </body>
 </html>
