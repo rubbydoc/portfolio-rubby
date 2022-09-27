@@ -129,9 +129,15 @@
      <script src="js/tab.js"></script>
      <script>
       $(document).ready(function(){
-        $(".framed").hover(function(){
-          $("#info").fadeIn("slow");
+        $(".framed").mouseenter(function(){
+          $("#info").fadeIn();
         });
+
+        $("#info").mouseleave(function(){
+          $(this).fadeOut();
+        });
+
+       
       });
      </script>
 
