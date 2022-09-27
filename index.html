@@ -54,7 +54,7 @@
               </div>
             </div>
 
-            <div class="passion" id="passion">
+          <div class="passion" id="passion">
                 <h2>< passion > </h2>
              <div class="p_section">
                 <div class="passions">
@@ -92,6 +92,26 @@
             </div>
              </div>
 
+        </div>
+
+        <div class="testemonial">
+          <div class="container">
+            
+                <img src="/images/1.jpg" alt="" id="first">
+                <img src="/images/2.jpg" alt="" id="second">
+                <img src="/images/3.jpg" alt="" id="third">
+            
+          </div>
+          <div class="testimony">
+            <p id="firstp" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere nam fugit, atque corporis quidem unde eos laboriosam. Officiis inventore dolorum iste dignissimos aspernatur labore reprehenderit ipsam sunt, tempora explicabo.</p>
+          <p id="secondp" >rem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere nam fugit, atque corporis quidem unde eos laboriosam. Officiis inventore dolorum iste dignissimos aspernatur labore reprehenderit ipsam sunt, tempora explicabo.</p>
+          <p id="thirdp" >ip ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere nam fugit, atque corporis quidem unde eos laboriosam. Officiis inventore dolorum iste dignissimos aspernatur labore reprehenderit ipsam sunt, tempora explicabo.</p>
+        
+          </div>
+        </div>
+
+        <div class="pic">
+          <img src="/images/4.jpg" alt="" style="width: 100px; border-radius:20px" id="picture">
         </div>
 
         </article>
@@ -137,6 +157,43 @@
           $(this).fadeOut();
         });
 
+
+        $("#first").click(function(){
+         
+          $("#firstp").show();
+        });
+        $("#first").dblclick(function(){
+         
+          window.open('https://ph.linkedin.com/in/omne-jean-pelingon-0b914a193/tl?trk=people-guest_people_search-card', '_blank');
+       });
+
+
+
+        $("#second").click(function(){
+          $("#secondp").show();
+        });
+        $("#second").dblclick(function(){
+          window.open('https://ph.linkedin.com/in/john-kevin-campanilla-40428924a/tl?trk=people-guest_people_search-card', '_blank');
+        });
+
+
+
+        $("#third").click(function(){
+          $("#thirdp").show();
+        });
+        $("#third").dblclick(function(){
+          window.open('https://ph.linkedin.com/in/jeah-marie-ypil-32a0431ba/tl', '_blank');
+        });
+
+
+        $("#picture").click(function(){
+          $(this).animate({
+            width:"50%",
+            left:"3.7in"
+
+
+          },1000)
+        });
        
       });
      </script>
